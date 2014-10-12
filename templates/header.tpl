@@ -44,7 +44,19 @@
 </head>
 
 <body>
-	<div class="navbar navbar-default navbar-fixed-top header" role="navigation" id="header-menu">
+
+	<div id="banner">
+
+		<div id="logo">
+			<div class="sun"></div>
+			<div class="line1 cloud">FLEET</div>
+			<div class="line2 cloud">FORUMS</div>
+		</div>
+
+		<img src="/plugins/nodebb-theme-fleet/images/street-flat.png" width="335" />
+	</div>
+
+	<div class="navbar navbar-default header" role="navigation" id="header-menu">
 		<div class="loading-bar"></div>
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->

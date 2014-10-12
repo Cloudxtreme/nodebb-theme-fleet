@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-lavender",
+	"id": "nodebb-theme-fleet",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{
@@ -7,7 +7,8 @@
 		}
 	],
 	"staticDirs": {
-		"vendor": "static/vendor"
+		"vendor": "static/vendor",
+    	"images": "public/images"
 	},
 	"scripts": [
 		"static/lib/lavender.js",
