@@ -21,6 +21,10 @@
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
+	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css' />
 	<script>
 		require.config({
 			baseUrl: "{relative_path}/src/modules",
@@ -47,11 +51,14 @@
 
 	<div id="banner">
 
-		<div id="logo">
-			<div class="sun"></div>
-			<div class="line1 cloud">FLEET</div>
-			<div class="line2 cloud">FORUMS</div>
-		</div>
+		<a href="/">
+			<div id="logo">
+				<div class="sun"></div>
+				<div class="line1 cloud">Fleet</div>
+				<div class="line2 cloud">Forum</div>
+				<!-- <i class="fa fa-cloud" style="color: white; font-size: 175px;"></i> -->
+			</div>
+		</a>
 
 		<img src="/plugins/nodebb-theme-fleet/images/street-flat.png" width="335" />
 	</div>
