@@ -1,3 +1,11 @@
+
+
+<div class="row home welcome-text">
+	Welcome to Fleet forum, a community discussion site serving Fleet, Hampshire. 
+	Check out the <a href="#">about page</a> to learn more about how the site works,
+	or jump straight in and browse the categories below
+</div>
+
 <div class="row home" itemscope itemtype="http://www.schema.org/ItemList">
 	<div class="col-lg-9 col-sm-12" no-widget-class="col-lg-12 col-sm-12" no-widget-target="sidebar">
 		<div class="row">
@@ -16,7 +24,7 @@
 							id="category-{categories.cid}" class="category-header category-header-image-{categories.imageClass}"
 							style="
 								<!-- IF categories.backgroundImage -->background-image: url({categories.backgroundImage});<!-- ENDIF categories.backgroundImage -->
-								<!-- IF categories.bgColor -->background-color: {categories.bgColor};<!-- ENDIF categories.bgColor -->
+								<!-- IF categories.bgColor --><!-- ENDIF categories.bgColor -->
 								color: {categories.color};
 							"
 						>

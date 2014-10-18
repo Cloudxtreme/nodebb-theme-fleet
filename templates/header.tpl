@@ -21,10 +21,21 @@
 		var RELATIVE_PATH = "{relative_path}";
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
-	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css" />
+
 	<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css' />
+
+	<link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css" />	
+	<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Salsa' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+
+
+
 	<script>
 		require.config({
 			baseUrl: "{relative_path}/src/modules",

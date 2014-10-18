@@ -69,6 +69,10 @@ a {
 	}
 }
 
+.dropdown-menu {
+	border-radius: 5px;
+}
+
 #banner {
 	text-align: right;
 	background-color: lightblue;
@@ -142,6 +146,10 @@ a {
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: @brand-primary;
 	background-color: #fff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li>a:hover {
+	border-radius: 5px;
 }
 
 #content {
@@ -225,14 +233,27 @@ a {
 	}
 }
 
+.welcome-text {
+	text-align: center;
+	margin: 10px;
+	margin-bottom: 40px;
+	font-size: 22px;
+	color: #555;
+	font-family: 'Averia Sans Libre';
+
+	a {
+		border-bottom: 1px #bbb solid;
+	}
+}
+
 .category-item {
 	padding-left: 8px !important;
 	padding-right: 8px !important;
 
 	.category-icon {
-		-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
-		-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
-		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+		border: 1px #ddd solid;
+		background-color: #6db044;
+		border-radius: 5px;
 	}
 
 	.category-header {
@@ -351,10 +372,6 @@ a {
 			opacity: 0.8;
 			font-size: 12px
 		}
-
-		&:last-child {
-			margin-bottom: -7px;
-		}
 	}
 }
 
@@ -364,6 +381,10 @@ a {
 
 .breadcrumb {
 	background-color: white;
+	
+	.fa-rss-square {
+		display: none;
+	}
 }
 
 .profile-image {
@@ -383,6 +404,16 @@ a {
 	.user-profile-picture {
 		border-radius: 50%;
 	}
+}
+
+.panel {
+	border-radius: 5px;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 }
 
 .category {
@@ -415,10 +446,8 @@ a {
 
 	.category-item {
 		background-color:#fff;
-		-webkit-box-shadow: inset 0px 0px 2px 2px #ffffff;
-		box-shadow: inset 0px 0px 2px 2px #ffffff;
-		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-		box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 30px;
 	}
 
 	.category-body {
