@@ -17,11 +17,17 @@
 			<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
 		</li>
 		<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<a href="{relative_path}/category/{category.slug}" itemprop="url"><span itemprop="title">{category.name}</span></a>
+			<a href="{relative_path}/topic/" itemprop="url"><span itemprop="title">{category.name}</span></a>
 		</li>
-<!-- 		<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-			<span itemprop="title">{title} <a target="_blank" href="{relative_path}/topic/{tid}.rss"><i class="fa fa-rss-square"></i></a></span>
-		</li> -->
+		<!-- TODO: Is there a nicer way to get the first post? -->
+		<!-- BEGIN posts -->
+			<!-- IF @first -->
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<span itemprop="title">{title}</span>
+				</li>
+			<!-- ENDIF @first -->
+		<!-- END posts -->
+
 		<div class="loading-indicator pull-right" done="0" style="display:none;">
 			<i class="fa fa-refresh fa-spin"></i>
 		</div>
@@ -60,12 +66,6 @@
 									<!-- ENDIF posts.user.groups.length -->
 								</div>
 								<div class="topic-text">
-									<!-- IF @first -->
-									<h3 class="topic-title">
-										<p id="topic_title_{posts.pid}" class="topic-title" itemprop="name"><i class="fa fa-thumb-tack hide"></i> <i class="fa fa-lock hide"></i> {title}</p>
-										<hr>
-									</h3>
-									<!-- ENDIF @first -->
 									<div id="content_{posts.pid}" class="post-content" itemprop="text">{posts.content}</div>
 									<!-- IF posts.user.signature -->
 									<div class="post-signature">{posts.user.signature}</div>
@@ -140,12 +140,12 @@
 								<!-- IF !reputation:disabled -->
 								&bull;
 								<a href="#" class="upvote <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-plus-circle"></i>
 								</a>
 								<span class="votes" data-votes="{posts.votes}">{posts.votes}</span>
 								<!-- IF !downvote:disabled -->
 								<a href="#" class="downvote <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
-									<i class="fa fa-chevron-down"></i>
+									<i class="fa fa-minus-circle"></i>
 								</a>
 								<!-- ENDIF !downvote:disabled -->
 								<!-- ENDIF !reputation:disabled -->
@@ -186,12 +186,6 @@
 					</div>
 				</div>
 			</li>
-
-			<!-- IF !posts.index -->
-			<li class="post-bar" data-index="{posts.index}">
-				<!-- IMPORT partials/post_bar.tpl -->
-			</li>
-			<!-- ENDIF !posts.index -->
 		<!-- END posts -->
 	</ul>
 

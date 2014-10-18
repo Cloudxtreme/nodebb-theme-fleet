@@ -64,10 +64,10 @@
 	</div>
 
 	<div class="navbar navbar-default header" role="navigation" id="header-menu">
-		<div class="loading-bar"></div>
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->
 		</div>
+		<div class="loading-bar"></div>
 	</div>
 
 	<div class="container" id="content">
