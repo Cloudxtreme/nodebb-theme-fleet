@@ -1,25 +1,25 @@
 {
-  "name": "nodebb-theme-lavender",
+  "name": "nodebb-theme-fleet",
   "version": "0.1.11",
-  "description": "Lavender Theme for NodeBB",
+  "description": "Fleet Theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-lavender"
+    "url": "https://github.com/theon/nodebb-theme-fleet"
   },
   "keywords": [
     "nodebb",
-    "lavender",
+    "fleet",
     "theme",
     "themes"
   ],
   "author": {
-    "name": "psychobunny",
-    "email": "psycho.bunny@hotmail.com"
+    "name": "theon",
+    "email": "forsey@gmail.com"
   },
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-lavender/issues"
+    "url": "https://github.com/theon/nodebb-theme-fleet/issues"
   },
   "peerDependencies": {
     "nodebb-theme-vanilla": "~0.1.0"

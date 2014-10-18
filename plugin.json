@@ -11,7 +11,7 @@
     	"images": "public/images"
 	},
 	"scripts": [
-		"static/lib/lavender.js",
+		"static/lib/fleet.js",
 		"static/vendor/masonry.js",
 		"static/vendor/imagesLoaded.js"
 	]

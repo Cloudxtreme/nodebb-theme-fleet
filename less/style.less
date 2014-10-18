@@ -123,18 +123,25 @@ a {
 .navbar {
 	background-color: @brand-primary;
 	border-width: 0px;
+	z-index: 5;
+}
+
+.navbar-fixed {
+	position: fixed;
+	top: 0px;
+	width: 100%;
 }
 
 .navbar-default .navbar-nav>li>a {
 	color: #fff;
 	margin: 5px;
 	padding: 10px;
+	border-radius: 5px;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
 	color: @brand-primary;
 	background-color: #fff;
-	border-radius: 5px;
 }
 
 #content {
@@ -174,10 +181,12 @@ a {
 	}
 }
 
-.header-topic-title {
-	padding-top:5px;
-	span {
-		height:25px;
+.header {
+	.header-topic-title {
+		span {
+			color: #fff;
+			height:25px;
+		}
 	}
 }
 

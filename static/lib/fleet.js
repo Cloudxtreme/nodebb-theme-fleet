@@ -1,7 +1,7 @@
 $('document').ready(function() {
 	requirejs([
-		'lavender/masonry',
-		'lavender/imagesLoaded',
+		'fleet/masonry',
+		'fleet/imagesLoaded',
 	], function(Masonry, imagesLoaded) {
 		var fixed = localStorage.getItem('fixed') || 0,
 			masonry;
@@ -103,6 +103,18 @@ $('document').ready(function() {
 				resize(fixed);
 			});
 		}
+
+		$(window).on('scroll', function() {
+			if($(window).scrollTop() > $('#banner').outerHeight(true)) {
+				$('.navbar').addClass('navbar-fixed');
+				// We have taken the navbar out of it's place in the DOM. 
+				// Add some padding to make up for the space we have taken.
+				$('#content').css('padding-top', $('.navbar').outerHeight(true));
+			} else {
+				$('.navbar').removeClass('navbar-fixed');
+				$('#content').css('padding-top', 0);
+			}
+		});
 	});
 
 	(function() {
