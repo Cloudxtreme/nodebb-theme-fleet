@@ -77,19 +77,14 @@ a {
 	text-align: right;
 	background-color: lightblue;
 	padding-top: 30px;
+	height: 200px;
 }
 
 #logo {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 240px;
-	margin-top: 30px;
-	margin-left: 50px;
+	position: relative;
+	width: 275px;
+	margin: 0px auto;
 	color: #444;
-	/* font-family: 'Lobster'; */
-	/*font-family: 'Droid Serif';*/
-	/*font-family: 'Special Elite', 'Leckerli One', cursive;*/
 	font-family: 'Leckerli One',cursive;
 }
 
@@ -105,7 +100,7 @@ a {
 	top: 75px;
 	left: 160px;
 	font-size: 25px;
-	padding: 10px;
+	padding: 10px 20px;
 }
 
 .cloud {
@@ -117,7 +112,7 @@ a {
 
 .sun {
 	position: absolute;
-	right: 0px;
+	right: 30px;
 	width: 100px;
 	height: 100px;
 	border-radius: 100%;
@@ -141,6 +136,13 @@ a {
 	margin: 5px;
 	padding: 10px;
 	border-radius: 5px;
+}
+
+.navbar-nav {
+	li {
+		font-family: 'Averia Sans Libre';
+		font-size: 15px;
+	}
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -244,6 +246,13 @@ a {
 	a {
 		border-bottom: 1px #bbb solid;
 	}
+}
+
+.well {
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 .category-item {
@@ -469,6 +478,14 @@ a {
 	}
 }
 
+.btn {
+	border-radius: 5px;
+}
+
+.input-group-addon:not(:first-child):not(:last-child) {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
 
 .topic {
 	> ul {
@@ -481,10 +498,6 @@ a {
 				margin-bottom: 0;
 			}
 		}
-	}
-
-	.btn {
-		border-radius: 5px;
 	}
 
 	.post-signature {
@@ -681,6 +694,14 @@ a {
 	&.replying::after {
 		margin-left: 0px;
 		.animation(topic-reply-pulse 2s ease-in infinite);
+	}
+}
+
+.users {
+	.users-box {
+		img {
+			border-radius: 100%;
+		}
 	}
 }
 

@@ -1,7 +1,7 @@
 
 
 <div class="row home welcome-text">
-	Welcome to Fleet forum, a community discussion site serving Fleet, Hampshire. 
+	A community discussion website serving Fleet, Hampshire. 
 	Check out the <a href="#">about page</a> to learn more about how the site works,
 	or jump straight in and browse the categories below
 </div>

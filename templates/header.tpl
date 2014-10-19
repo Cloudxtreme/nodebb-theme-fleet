@@ -66,12 +66,11 @@
 			<div id="logo">
 				<div class="sun"></div>
 				<div class="line1 cloud">Fleet</div>
-				<div class="line2 cloud">Forum</div>
-				<!-- <i class="fa fa-cloud" style="color: white; font-size: 175px;"></i> -->
+				<div class="line2 cloud">Life</div>
 			</div>
 		</a>
 
-		<img src="/plugins/nodebb-theme-fleet/images/street-flat.png" width="335" />
+		<!-- <img src="/plugins/nodebb-theme-fleet/images/street-flat.png" width="335" /> -->
 	</div>
 
 	<div class="navbar navbar-default header" role="navigation" id="header-menu">
