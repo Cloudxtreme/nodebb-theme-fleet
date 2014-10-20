@@ -46,7 +46,7 @@
 				'vendor': '../../vendor',
 				'buzz': '../../vendor/buzz/buzz.min'
 			}
-		});
+		});		
 	</script>
 
 	<!-- IF useCustomJS -->

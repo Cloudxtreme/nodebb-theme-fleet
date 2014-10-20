@@ -6,6 +6,14 @@ $('document').ready(function() {
 		var fixed = localStorage.getItem('fixed') || 0,
 			masonry;
 
+		app.openChat = function (username, touid) {
+			window.location.href = "/chats/" + username;
+		};
+
+
+
+
+
 		function doMasonry() {
 			if($('.home').length) {
 				masonry = new Masonry('.row.home > div', {
@@ -47,6 +55,22 @@ $('document').ready(function() {
 					});
 
 					localStorage.setItem('masonry:layout', JSON.stringify(saved));
+				});
+			}
+
+			// Code to lock the menu to the top when scrolling past the header.
+			// Enabled on all pages other than the homepage
+			if($('.home').length == 0) {
+				$(window).on('scroll', function() {
+					if($(window).scrollTop() > $('#banner').outerHeight(true)) {
+						$('.navbar').addClass('navbar-fixed');
+						// We have taken the navbar out of it's place in the DOM. 
+						// Add some padding to make up for the space we have taken, so the page doesn't jump.
+						$('#content').css('padding-top', $('.navbar').outerHeight(true));
+					} else {
+						$('.navbar').removeClass('navbar-fixed');
+						$('#content').css('padding-top', 0);
+					}
 				});
 			}
 		}
@@ -103,18 +127,6 @@ $('document').ready(function() {
 				resize(fixed);
 			});
 		}
-
-		$(window).on('scroll', function() {
-			if($(window).scrollTop() > $('#banner').outerHeight(true)) {
-				$('.navbar').addClass('navbar-fixed');
-				// We have taken the navbar out of it's place in the DOM. 
-				// Add some padding to make up for the space we have taken.
-				$('#content').css('padding-top', $('.navbar').outerHeight(true));
-			} else {
-				$('.navbar').removeClass('navbar-fixed');
-				$('#content').css('padding-top', 0);
-			}
-		});
 	});
 
 	(function() {

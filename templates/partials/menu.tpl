@@ -25,7 +25,7 @@
 				<ul id="main-nav" class="nav navbar-nav pull-left">
 
 					<li>
-						<a href="{relative_path}" title="Home">
+						<a href="/" title="Home">
 							<i class="fa fa-fw fa-home"></i><span class="visible-xs-inline">Home</span>
 						</a>
 					</li>
@@ -70,7 +70,7 @@
 					<!-- IF searchEnabled -->
 					<li class="visible-xs">
 						<a href="{relative_path}/search" title="[[global:header.search]]" id="mobile-search-button" >
-							<i class="fa fa-search fa-fw" ></i> [[global:header.search]]
+							<i class="fa fa-search fa-fw" ></i>[[global:header.search]]
 						</a>
 					</li>
 					<!-- ENDIF searchEnabled -->
