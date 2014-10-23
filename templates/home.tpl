@@ -2,7 +2,7 @@
 
 <div class="row home welcome-text">
 	A community discussion website serving Fleet, Hampshire. 
-	Check out the <a href="#">about page</a> to learn more about how the site works,
+	Check out the <a href="/help">help page</a> to learn more about the site,
 	or jump straight in and browse the categories below
 </div>
 
