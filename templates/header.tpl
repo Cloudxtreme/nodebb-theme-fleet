@@ -66,7 +66,7 @@
 			<div id="logo">
 				<div class="sun"></div>
 				<div class="line1 cloud">Fleet</div>
-				<div class="line2 cloud">Life</div>
+				<div class="line2 cloud">Forums</div>
 			</div>
 		</a>
 
