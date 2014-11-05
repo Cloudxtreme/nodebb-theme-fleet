@@ -1,28 +1,14 @@
-Lavender Theme for NodeBB
-=========================
+Fleet Theme for NodeBB
+======================
 
-A simple theme for NodeBB. Check out the theming guide that accompanies this work at http://burnaftercompiling.com/nodebb/nodebb-hands-on-theming-guide-part-1/
-
+The theme used on [fleetforums.co.uk](https://www.fleetforums.co.uk)
 
 ## Screenshots
 
-**Home View**
-
-[![Home View](http://i.imgur.com/gfQYGHl.png)](http://i.imgur.com/gfQYGHl.png)
-
 **Category View**
 
-[![Category View](http://i.imgur.com/JalyDRpl.png)](http://i.imgur.com/JalyDRp.png)
-
-**Topic View**
-
-[![Topic View](http://i.imgur.com/R8YhchEl.png)](http://i.imgur.com/R8YhchE.png)
+![Category View](http://i.imgur.com/fNDn4ib.png)
 
 ## Installation
 
-    npm install nodebb-theme-lavender
-
-
-## Credits
-
-variables.less modified from "White Plum" by [divshot](https://github.com/divshot/)
+    npm install git+https://github.com/fleetforums/nodebb-theme-fleet.git
