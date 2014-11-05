@@ -5,9 +5,9 @@ The theme used on [fleetforums.co.uk](https://www.fleetforums.co.uk)
 
 ## Screenshots
 
-**Category View**
+**Topic View**
 
-![Category View](http://i.imgur.com/fNDn4ib.png)
+![Topic View](http://i.imgur.com/fNDn4ib.png)
 
 ## Installation
 
