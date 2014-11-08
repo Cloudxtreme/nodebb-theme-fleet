@@ -7,7 +7,7 @@ $('document').ready(function() {
 			masonry;
 
 		app.openChat = function (username, touid) {
-			window.location.href = "/chats/" + username;
+			window.location.href = "/chats/" + username.trim();
 		};
 
 
