@@ -74,6 +74,7 @@ $('document').ready(function() {
 				});
 			} else {
 				$('.navbar').removeClass('navbar-fixed');
+				$('#content').css('padding-top', 0);
 			}
 		}
 
